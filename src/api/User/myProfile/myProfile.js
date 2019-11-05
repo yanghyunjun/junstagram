@@ -14,5 +14,11 @@ export default {
         posts
       };
     }
+  },
+  User: {
+    fullName: (_, __, { request }) => {
+      console.log(request);
+      return "lalal";
+    }
   }
 };
