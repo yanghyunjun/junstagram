@@ -6,7 +6,7 @@ export default {
     seeFullPost: async (_, args) => {
       const { id } = args;
       const post = await prisma.post({ id });
-      const coments = await prisma
+      const comments = await prisma
         .post({ id })
         .comments()
         .$fragment(COMMENT_FRAGMENT);
