@@ -14,7 +14,7 @@ type User {
   posts: [Post!]! @relation(name:"PostOfUser", onDelete:CASCADE)
   likes: [Like!]! @relation(name:"LikeOfUser", onDelete:CASCADE)
   comments: [Comment!]! @relation(name:"CommentOfUser", onDelete:CASCADE)
-  romms: [Room!]! 
+  rooms: [Room!]! 
   loginSecret: String!
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
