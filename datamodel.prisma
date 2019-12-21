@@ -12,7 +12,7 @@ type User {
   likes: [Like!]! @relation(name:"LikeOfUser", onDelete:CASCADE)
   comments: [Comment!]! @relation(name:"CommentOfUser", onDelete:CASCADE)
   rooms: [Room!]! 
-  loginSecret: String!
+  loginSecret: String
   createdAt: DateTime! @createdAt
   updatedAt: DateTime! @updatedAt
 }
