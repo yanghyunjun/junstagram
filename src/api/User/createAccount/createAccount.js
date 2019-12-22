@@ -13,7 +13,7 @@ export default {
         ]
       });
       if (exists) {
-        throw Error("This username is already exists");
+        throw Error("This username / email is already exists");
       }
       await prisma.createUser({
         username,
