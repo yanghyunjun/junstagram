@@ -1,6 +1,5 @@
 import { isAuthenticated } from "../../../middlewares";
 import { prisma } from "../../../../generated/prisma-client";
-import { tryFunctionOrLogError } from "apollo-utilities";
 
 export default {
   Mutation: {
