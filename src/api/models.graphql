@@ -10,14 +10,17 @@ type User {
   isSelf: Boolean!
   bio: String
   following: [User!]!
+  followingCount: Int!
   followers: [User!]!
+  followersCount: Int!
   posts: [Post!]!
+  postsCount: Int!
   likes: [Like!]!
   comments: [Comment!]!
-  loginSecret: String
+  rooms: [Room!]!
+  loginSecret: String!
   createdAt: String
   updatedAt: String
-  rooms: [Room!]!
 }
 
 type Post {
