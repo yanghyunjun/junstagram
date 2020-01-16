@@ -13,6 +13,11 @@ export default {
         .postsConnection({ where: { user: { id } } })
         .aggregate()
         .count(),
+    postsCount: ({ id }) =>
+      prisma
+        .postsConnection({ where: { user: { id } } })
+        .aggregate()
+        .count(),
     followingCount: ({ id }) =>
       prisma
         .usersConnection({ where: { followers_some: { id } } })
